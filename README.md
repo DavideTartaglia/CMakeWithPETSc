@@ -1,5 +1,5 @@
 # CMakeWithPETSc
-As a beginner, I struggled a lot to link PETSc with CMake in a comfortable way. This is my best attempt to make it work decently.
+As a beginner, I struggled a lot to build a project using CMake and link it with PETSc in a comfortable way. This is my best attempt to make it work decently.
 
 This small repo contains the 2D Poisson problem exemple from the PETSc tutorial. I compile it using CMake and link it to OpenMPI and PETSc as external libraries.
 
