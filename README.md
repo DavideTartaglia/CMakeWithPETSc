@@ -12,7 +12,7 @@ I tested this on Debian 10, but it should work on any linux environment.
 * OpenMPI (PETSc offers the possibility to dowload it during its installation)
 * PETSc (a version recent enough to have the `PETSc.pc` (or `petsc.pc`) file in `${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig` )
 
-I assume you already installed successfully PETSc. I also assume that you have set the value for the environmental variable `${PETSC_DIR}` to be equal to the path to your favourite installation of PETSc. If you didn't, you can consider doing it by adding a line to your `.bashrc` sourcing a value for the `${PETSC_DIR}`. To do this, open with your favourite text editor the file .bashrc that you can find in you home directory and add this line at the bottom:
+I assume you already successfully installed PETSc. I also assume that you have set the value for the environmental variable `${PETSC_DIR}` to be equal to the path to your favourite installation of PETSc. If you didn't, you can consider doing it by adding a line to your `.bashrc` sourcing a value for the `${PETSC_DIR}`. To do this, open with your favourite text editor the file .bashrc that you can find in you home directory and add this line at the bottom:
 
 `export PETSC_DIR=path/to/your/petsc`
 
