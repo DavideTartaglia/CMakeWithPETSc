@@ -10,7 +10,7 @@ I tested this on Debian 10, but it should work on any linux environment.
 * pkg
 * CMake v3.11
 * OpenMPI (PETSc offers the possibility to dowload it during its installation)
-* PETSc (a version recent enough to have the PETSc.pc (or petsc.pc) file in ${PETSC_DIR}/arch-linux-c-debug/lib/pkgconfig)
+* PETSc (a version recent enough to have the PETSc.pc (or petsc.pc) file in ${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig)
 
 I assumed you already installed successfully PETSc. I also assume that you have set the value for the environmental variable ${PETSC_DIR} to be equal to the path to your favourite installation of PETSc. If you didn't, you can consider doing it by adding a line to your .bashrc sourcing a value for the ${PETSC_DIR}. To do this, open with your favourite text editor the file .bashrc that you can find in you home directory and add this line at the bottom:
 
