@@ -1,13 +1,13 @@
 # CMakeWithPETSc
 As a beginner, I struggeled a lot to link PETSc with CMake in a comfortable way. This is my best attempt to make it work decently.
 
-This small repo contains the 2D Poisson problem exemple from the PETSc tutorial. I compile it using CMake and linking OpenMPI and PETSc as external libraries.
+This small repo contains the 2D Poisson problem exemple from the PETSc tutorial. I compile it using CMake and link it to OpenMPI and PETSc as external libraries.
 
 ## Recommended setup
 I tested this on Debian 10, but it should work on any linux environment.
 
 ## Prerequisites
-* pkg
+* pk
 * CMake v3.11
 * OpenMPI (PETSc offers the possibility to dowload it during its installation)
 * PETSc (a version recent enough to have the `PETSc.pc` (or `petsc.pc`) file in `${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig` )
