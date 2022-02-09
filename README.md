@@ -10,15 +10,15 @@ I tested this on Debian 10, but it should work on any linux environment.
 * pkg
 * CMake v3.11
 * OpenMPI (PETSc offers the possibility to dowload it during its installation)
-* PETSc (a version recent enough to have the PETSc.pc (or petsc.pc) file in `${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig` )
+* PETSc (a version recent enough to have the `PETSc.pc` (or `petsc.pc`) file in `${PETSC_DIR}/${PETSC_ARCH}/lib/pkgconfig` )
 
-I assumed you already installed successfully PETSc. I also assume that you have set the value for the environmental variable ${PETSC_DIR} to be equal to the path to your favourite installation of PETSc. If you didn't, you can consider doing it by adding a line to your .bashrc sourcing a value for the ${PETSC_DIR}. To do this, open with your favourite text editor the file .bashrc that you can find in you home directory and add this line at the bottom:
+I assumed you already installed successfully PETSc. I also assume that you have set the value for the environmental variable `${PETSC_DIR}` to be equal to the path to your favourite installation of PETSc. If you didn't, you can consider doing it by adding a line to your .bashrc sourcing a value for the ${PETSC_DIR}. To do this, open with your favourite text editor the file .bashrc that you can find in you home directory and add this line at the bottom:
 
 `export PETSC_DIR=path/to/your/petsc`
 
-If you didn't, just remember that the value of ${PETSC_DIR} is equal to the directory of your PETSc installation.
+If you didn't, just remember that the value of `${PETSC_DIR}` is equal to the directory of your PETSc installation.
 
-More or less the same holds for the value of the ${PETSC_ARCH}. Check its recommended value during the installation of PETSc.
+More or less the same holds for the value of the `${PETSC_ARCH}`. Check its recommended value during the installation of PETSc.
 
 ## How do I install this?
 To me, the easiest way (and probably the recommended one, see https://github.com/jedbrown/cmake-modules#readme) to solve the problem of using PETSc with CMake is to use pkg-config.
